@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStoreReconnectionHandler", "EventStoreReconnectionHandler\EventStoreReconnectionHandler.csproj", "{DCDD6EAF-8EB6-4C27-91F1-EE58696EBAB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStoreReconnectionHandler.Tests", "EventStoreReconnectionHandler.Tests\EventStoreReconnectionHandler.Tests.csproj", "{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCDD6EAF-8EB6-4C27-91F1-EE58696EBAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDD6EAF-8EB6-4C27-91F1-EE58696EBAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDD6EAF-8EB6-4C27-91F1-EE58696EBAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDD6EAF-8EB6-4C27-91F1-EE58696EBAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
