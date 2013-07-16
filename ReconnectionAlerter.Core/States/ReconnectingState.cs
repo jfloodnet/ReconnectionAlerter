@@ -1,4 +1,5 @@
 ﻿using System;
+using ReconnectionAlerter.Core.Common;
 using ReconnectionAlerter.Core.Infrastructure;
 using ReconnectionAlerter.Core.Messages;
 
@@ -18,7 +19,7 @@ namespace ReconnectionAlerter.Core.States
 
             _publisher.Publish(
                 TimerMessage.Schedule.Create(
-                TimeSpan.FromMinutes(10),
+                ReconnectionHandlerConfig.Timeout,
                 new PublishEnvelope(_publisher),
                 replyMessage: new BeenReconnectingForTooLong(_version)));
         }

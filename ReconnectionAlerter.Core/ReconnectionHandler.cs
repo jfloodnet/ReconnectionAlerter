@@ -27,5 +27,5 @@ namespace ReconnectionAlerter.Core
         {
             _state = _state.Handle(message);
         }
-    }    
+    }   
 }

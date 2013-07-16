@@ -51,7 +51,7 @@ namespace ReconnectionAlerter.Core.Infrastructure
 
         public void Handle(Message message)
         {
-            
+            Ensure.NotNull(message, "message");
             DispatchByType(message);
         }
 

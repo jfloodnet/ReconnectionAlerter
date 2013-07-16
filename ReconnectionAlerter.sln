@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReconnectionAlerter.Core", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReconnectionAlerter.Tests", "ReconnectionAlerter.Tests\ReconnectionAlerter.Tests.csproj", "{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReconnectionAlerter.TestClient", "ReconnectionAlerter.TestClient\ReconnectionAlerter.TestClient.csproj", "{C951B65A-201E-44D4-B814-828A3F5C6ACD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B5BB885-F981-4FB1-B5C9-4A84F6ED789B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C951B65A-201E-44D4-B814-828A3F5C6ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C951B65A-201E-44D4-B814-828A3F5C6ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C951B65A-201E-44D4-B814-828A3F5C6ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C951B65A-201E-44D4-B814-828A3F5C6ACD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
