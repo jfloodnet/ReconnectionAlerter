@@ -1,7 +1,8 @@
-﻿using EventStoreReconnectionHandler.Infrastructure;
+﻿using EventStoreReconnectionHandler.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using EventStoreReconnectionHandler.Infrastructure;
 using Xunit;
 
 namespace EventStoreReconnectionHandler.Tests

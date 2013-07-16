@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EventStoreReconnectionHandler.Messages;
 using EventStoreReconnectionHandler.Infrastructure;
+using EventStoreReconnectionHandler.Messages;
+using EventStoreReconnectionHandler.Common;
 using EventStoreReconnectionHandler.States;
 
 namespace EventStoreReconnectionHandler

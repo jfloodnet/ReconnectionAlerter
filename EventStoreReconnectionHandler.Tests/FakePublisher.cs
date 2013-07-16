@@ -1,5 +1,6 @@
-﻿using EventStoreReconnectionHandler.Infrastructure;
+﻿using EventStoreReconnectionHandler.Common;
 using System.Collections.Generic;
+using EventStoreReconnectionHandler.Infrastructure;
 
 namespace EventStoreReconnectionHandler.Tests
 {

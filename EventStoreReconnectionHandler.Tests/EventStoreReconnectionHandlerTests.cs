@@ -7,13 +7,13 @@ namespace EventStoreReconnectionHandler.Tests
     public class EventStoreReconnectionHandlerTests
     {
         private FakePublisher fakePublisher;
-        private EventStoreReconnectionHandler sut;        
+        private ReconnectionHandler sut;        
 
         public EventStoreReconnectionHandlerTests()
         {
             //Arrange
             fakePublisher = new FakePublisher();
-            sut = new EventStoreReconnectionHandler(fakePublisher);
+            sut = new ReconnectionHandler(fakePublisher);
         }
 
         [Fact]
