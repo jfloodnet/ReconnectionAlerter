@@ -1,0 +1,10 @@
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\bin\Debug\ReconnectionAlerter.Tests.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\bin\Debug\ReconnectionAlerter.Tests.pdb
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\bin\Debug\ReconnectionAlerter.Core.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\bin\Debug\Should.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\bin\Debug\xunit.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\bin\Debug\ReconnectionAlerter.Core.pdb
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\bin\Debug\xunit.xml
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\obj\Debug\ReconnectionAlerter.Tests.csprojResolveAssemblyReference.cache
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\obj\Debug\ReconnectionAlerter.Tests.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Tests\obj\Debug\ReconnectionAlerter.Tests.pdb

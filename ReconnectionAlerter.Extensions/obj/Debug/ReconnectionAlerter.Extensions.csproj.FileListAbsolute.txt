@@ -1,0 +1,10 @@
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\obj\Debug\ReconnectionAlerter.Extensions.csprojResolveAssemblyReference.cache
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\bin\Debug\ReconnectionAlerter.Extensions.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\bin\Debug\ReconnectionAlerter.Extensions.pdb
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\bin\Debug\EventStore.ClientAPI.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\bin\Debug\ReconnectionAlerter.Core.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\bin\Debug\ReconnectionAlerter.Core.pdb
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\obj\Debug\ReconnectionAlerter.Extensions.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\obj\Debug\ReconnectionAlerter.Extensions.pdb
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\bin\Debug\ReconnectionAlerter.Email.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Extensions\bin\Debug\ReconnectionAlerter.Email.pdb

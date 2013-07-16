@@ -1,6 +1,5 @@
-﻿
-using EventStoreReconnectionHandler.Infrastructure;
-using EventStoreReconnectionHandler.Messages;
+﻿using ReconnectionAlerter.Core.Infrastructure;
+using ReconnectionAlerter.Core.Messages;
 
 namespace ReconnectionAlerter.Email
 {

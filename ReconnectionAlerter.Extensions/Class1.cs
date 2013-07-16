@@ -1,6 +1,8 @@
 ﻿using EventStore.ClientAPI;
-using EventStoreReconnectionHandler;
-using EventStoreReconnectionHandler.Infrastructure;
+using ReconnectionAlerter.Core;
+using ReconnectionAlerter.Core.Infrastructure;
+using ReconnectionAlerter.Core.Messages;
+using ReconnectionAlerter.Email;
 
 namespace ReconnectionAlerter.Extensions
 {
@@ -15,15 +17,18 @@ namespace ReconnectionAlerter.Extensions
             var timer = new TimerService(new ThreadBasedScheduler(new RealTimeProvider()));
             outputBus.Subscribe(timer);
 
+            var alerter = new Alerter();
+            outputBus.Subscribe<AlertReconnectingForTooLong >(alerter);
+            outputBus.Subscribe<AlertFalseAlarm>(alerter);
+
             var connectionHandler = new ReconnectionHandler(mainQueue);
             outputBus.Subscribe(connectionHandler);
-
-            settings.OnConnected(_ => connectionHandler.HandleConnected())
-                    .OnReconnecting(_ => connectionHandler.HandleReconnecting());
-
             mainQueue.Start();
 
-            return settings.KeepReconnecting();
+            return settings
+                .OnConnected(_ => connectionHandler.HandleConnected())
+                .OnReconnecting(_ => connectionHandler.HandleReconnecting())
+                .KeepReconnecting();
         }
     }
 }

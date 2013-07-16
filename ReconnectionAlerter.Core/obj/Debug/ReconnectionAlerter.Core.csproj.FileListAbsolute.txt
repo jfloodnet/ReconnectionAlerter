@@ -1,0 +1,5 @@
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Core\bin\Debug\ReconnectionAlerter.Core.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Core\bin\Debug\ReconnectionAlerter.Core.pdb
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Core\obj\Debug\ReconnectionAlerter.Core.csprojResolveAssemblyReference.cache
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Core\obj\Debug\ReconnectionAlerter.Core.dll
+C:\dev\ReconnectionAlerter\ReconnectionAlerter.Core\obj\Debug\ReconnectionAlerter.Core.pdb
