@@ -9,8 +9,11 @@ namespace ReconnectionAlerter.TestClient
     {
         static void Main(string[] args)
         {
-            var connectionHandler = new ReconnectionAlerterNode().Start();
-            ReconnectionHandlerConfig.Timeout = TimeSpan.FromSeconds(5);
+            var connectionHandler = new 
+                ReconnectionAlerterBuilder()
+                .WithTimeout(TimeSpan.FromSeconds(5))
+                .Build();
+            
             connectionHandler.HandleConnected();
             
             while (!Console.KeyAvailable)

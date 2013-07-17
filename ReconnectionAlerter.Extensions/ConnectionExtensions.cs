@@ -8,9 +8,19 @@ using ReconnectionAlerter.Email;
 
 namespace ReconnectionAlerter.Extensions
 {
-    public class ReconnectionAlerterNode
+    public class ReconnectionAlerterBuilder
     {
-        public ReconnectionHandler Start()
+        public ReconnectionAlerterBuilder()
+        {
+            ReconnectionHandlerConfig.Timeout = TimeSpan.FromMinutes(5);
+        }
+
+        public ReconnectionAlerterBuilder WithTimeout(TimeSpan timeSpan)
+        {
+            ReconnectionHandlerConfig.Timeout = timeSpan;
+            return this;
+        }
+        public ReconnectionHandler Build()
         {
             var outputBus = new InMemoryBus("OutputBus");
             var mainQueue = new QueuedHandler(outputBus, "Main Queue");
@@ -35,12 +45,13 @@ namespace ReconnectionAlerter.Extensions
     {
         public static ConnectionSettings KeepReconnectingWithAlerts(this ConnectionSettingsBuilder settings, TimeSpan alertAfterReconnectingFor)
         {
-            ReconnectionHandlerConfig.Timeout = alertAfterReconnectingFor;
-            var connectionHandler = new ReconnectionAlerterNode().Start();
+            var alerter = new ReconnectionAlerterBuilder()
+                .WithTimeout(alertAfterReconnectingFor)
+                .Build();
 
             return settings
-                .OnConnected(_ => connectionHandler.HandleConnected())
-                .OnReconnecting(_ => connectionHandler.HandleReconnecting())
+                .OnConnected(_ => alerter.HandleConnected())
+                .OnReconnecting(_ => alerter.HandleReconnecting())
                 .KeepReconnecting();
         }
     }
